@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Busy Bee Florist</title>
+<meta charset="utf-8">
+<meta name="viewport" contact="width=device-width initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Caramel&family=Montserrat&family=Playfair+Display&family=Poiret+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" type="image/x-icon" href="./images/favicon.jpeg">
+<script src="./Script/myScript.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header area: announcement + logo -->
+        <header>
+            <div class="announcement">
+                <ul>
+                    <li>March Special: 10% off web order</li>
+                    <li>&#8739;</li>
+                    <li>Next-day home delivery: order by 3pm</li>
+                </ul>
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <!-- navigation + Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="./images/logo1.jpg" alt="logo"></a>
+            </div>
+            <ul>
+                <li><a href="#shop">Discover</a></li>
+                <li>&#8739;</li>
+                <li><a href="https://www.facebook.com/search/top?q=busy%20bee%20florist" target="_blank" class="fa fa-facebook"></a></li>
+                <li><a href="https://twitter.com/search?q=busy%20bee%20florist&src=typed_query" target="_blank" class="fa fa-twitter"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a></li>
+                <li>&#8739;</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="mobile-nav">
+                <div class="mobile">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#shop">Discover</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="purchase.html">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mobile">
+            <span onclick="openNav()" id="hamburger">&#9776;</span>
+        </div>
+
+        <!-- Hero image -->
+        <div class="hero-image">
+            <img src="./images/background.jpeg" alt="flowerbackground" width="100%">
+            <div class="hero-quote">
+                <p>Happiness held<br> is the seed: <br><span class="red">Happiness</span> shared is the <span class="red">flower</span>.</p>
+                <p><i>- John Harrigan</i></p>
+            </div>
+            <div class="order-now">
+                <a href="purchase.html">Order Now</a>
+            </div>
+        </div>
+        
+
+        <!-- Best seller products in tab gallery -->
+        <div class="best-sellers" id="shop">
+            <div class="divider"><span></span><span><h1>Best Sellers</h1></span><span></span></div>
+            <div class="tip">select to enlarge</div>
+            <div class="row-bs">
+                <div class="column-bs">
+                    <img src="./images/bestseller1.jpeg" alt="Foliage: White Collection, Tailor-made, $105" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column-bs">
+                    <img src="./images/bestseller2.jpeg" alt="Foliage: Pink Collection, Tailor-made, $100" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column-bs">
+                    <img src="./images/fresh1.jpeg" alt="Fresh: Pink Roses, $3 per rose" style="width:100%" onclick="myFunction(this);">
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab Gallery -->
+        <div class="container-extendedimage">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+            <div class="order-now">
+                <a href="purchase.html">Order Now</a>
+            </div>
+        </div>
+
+        <!-- Foliage category -->
+        <div class="foliage">
+            <div class="divider">
+                <span></span>
+                <span><h1>Foliage<br><section class="textunderdivider">Tailor-made with 25 years of experience</section></h1></span>
+                <span></span>
+            </div>
+
+            <!-- Slideshow -->
+            <div class="mySlides">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn-slideshow">minimize</span>
+                    <img src="images/bestseller2.jpeg" style="width:100%">
+                    <div class="order-now">
+                        <a href="purchase.html">Order Now</a>
+                    </div>
+            </div>
+            <div class="mySlides">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn-slideshow">minimize</span>
+                    <img src="images/foliage1.jpeg" style="width:100%">
+                    <div class="order-now">
+                <a href="purchase.html">Order Now</a>
+            </div>
+            </div>
+            <div class="mySlides">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn-slideshow">minimize</span>
+                    <img src="images/bestseller1.jpeg" style="width:100%">
+                    <div class="order-now">
+                <a href="purchase.html">Order Now</a>
+            </div>
+            </div>
+            <div class="mySlides">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn-slideshow">minimize</span>
+                    <img src="images/foliage2.jpeg" style="width:100%">
+                    <div class="order-now">
+                <a href="purchase.html">Order Now</a>
+            </div>
+            </div>
+            <div class="mySlides">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn-slideshow">minimize</span>
+                    <img src="images/foliage3.jpeg" style="width:100%">
+                    <div class="order-now">
+                <a href="purchase.html">Order Now</a>
+            </div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Image text -->
+            <div class="caption-container">
+            <p id="caption">Select product to enlarge</p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row-thumbnail">
+                <div class="column-thumbnail">
+                    <img class="demo cursor" src="images/bestseller2.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Foliage: Pink Collection - 'Engulf', Tailor-made, $100">
+                </div>
+                <div class="column-thumbnail">
+                    <img class="demo cursor" src="images/foliage1.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Foliage: Winter Collection - 'Noise', Tailor-made, $130">
+                </div>
+                <div class="column-thumbnail">
+                    <img class="demo cursor" src="images/bestseller1.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Foliage: White Collection - Premium Wedding 'Blush', Tailor-made, $150">
+                </div>
+                <div class="column-thumbnail">
+                    <img class="demo cursor" src="images/foliage2.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Foliage: Summer Collection - 'Field', Tailor-made, $95">
+                </div>
+                <div class="column-thumbnail">
+                    <img class="demo cursor" src="images/foliage3.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Foliage: Spring Collection - 'Harvest', Tailor-made, $100">
+                </div>
+            </div>
+        </div>
+
+        <!-- Fresh Flower products -->
+        <div class="fresh">
+            <!-- Divider here -->
+            <div class="divider">
+                <span></span>
+                <span><h1>Freshly Harvest<br><section class="textunderdivider">hand harvested with care</section></h1></span>
+                <span></span>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item" style="background-color: #f3eeee;">
+                    <img src="images/fresh1.jpeg" alt="Pink roses" width="100%">
+                </div>
+                <div class="grid-item" style="background-color: #f3eeee;">
+                    <h1>Pink roses</h1>
+                    <p>$3 per flower</p>
+                    <p>Represents: Gratitude, Comfort, elegance, grace, admiration, appreciation, and joy</p>
+                    <p>Perfect for
+                        <br>Thank-you, Home decor, New love, Passing of a loved one</p>
+                    <p>Occasion <br>Wedding, Mother's Day or Father's Day, Performance, Graduation</p>
+                    <p>Be sure to read our <a href="#guide" id="guide-link">guide</a> below.</p>
+                    <p class="stock">Avaliability: in-stock</p>
+                    <a href="purchase.html" class="purchase">Purchase</a>
+                </div>
+                <div class="grid-item" style="background-color: #ffffff;">
+                    <h1>Red roses</h1>
+                    <p>$3 per flower</p>
+                    <p>Capture the minds and hearts of lovers</p>
+                    <p>Represents: passion, true love, romance, and desire.</p>
+                    <p>The perfect way to say, <span class="red">“I love you”</span> when words are not enough.</p>
+                    <p>Occasion <br>anniversary, first date, Valentine's Day, </p>
+                    <p>The different numbers of roses all represent a different facet of love.
+                        <br>Be sure to read our <a href="#guide" id="guide-link">guide</a> below.</p>
+                    <p class="stock">Avaliability: in-stock</p>
+                    <a href="purchase.html" class="purchase">Purchase</a>
+                </div>
+                <div class="grid-item" style="background-color: #ffffff;">
+                    <img src="images/fresh2.jpeg" alt="Red roses" width="100%">
+                </div>
+                <div class="grid-item" style="background-color: #ffffdf;">
+                    <img src="images/fresh3.jpeg" alt="White roses and other shades" width="100%">
+                </div>
+                <div class="grid-item" style="background-color: #ffffdf;">
+                    <h1>Shades of roses</h1>
+                    <p>$3 per flower</p>
+                    <p>Every rose means something a little different. With over 25 years of experience in florist, we can provide you with every possible feeling you want 
+                        to convey to find your perfect roses to hold the most symbolism for your friend, family and loved ones.</p>
+                    <p>Sometimes a rose of one colour isn't enough to represent your feeling. Mix and match is key but keep in mind every combinations have meaning all on their own. Let us help you.</p>
+                    <p class="stock">Avaliability: in-stock</p>
+                    <a href="purchase.html" class="purchase">Purchase</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Number guide -->
+        <div class="number-guide" id="guide">
+            <div class="divider">
+                <span></span>
+                <span><h1>Symbolism in Numbers<br></h1></span>
+                <span></span>
+            </div>
+            <div class="number-guide-content">
+            <p>As well as the different colors of roses all have their own meaning, the different numbers of roses all represent a different facet of love.</p>
+            <p>Here's a quick overview</p>
+            <p>One Rose: Love at first sight, or if in a long-term relationship 'you are still <span class="red">the only one</span>'
+            <br>Two Roses: Mutual love and affection 
+            <br>Six Roses: Infatuation and the need to be yours 
+            <br>Ten Roses: Their love is perfection 
+            <br>Eleven Roses: True and deep love that is treasured 
+            <br>Twelve Roses: A classic gift that says <span class="red">'be mine' </span>
+            <span id="dots">...</span><span id="more">
+            <br>Fifteen Roses: An apology for a loved one 
+            <br>Twenty-Four Roses: Clearly state that <span class="red">'I'm yours'</span> 
+            <br>Thirty-Six Roses: Head over heels in love 
+            <br>Fifty Roses: A love that has no bounds
+            <br>If you require any further information, please feel free to <a href="contact.html" id="guide-link">Contact</a> us.
+            </span></p>
+
+            <!-- read more button -->
+            <button onclick="myFunction2()" id="myBtn">Read more</button>
+            </div>   
+        </div>
+
+        <!--Additional links-->
+        <div class="links">
+            <h1 id="links-header">Here are some additional guides you might like..</h1>
+            <div class="row-links">
+                <div class="column-links">
+                    <div class="links-content">
+                    <a href="https://www.bhg.com.au/australian-native-flowers-a-guide-to-australian-flowers" target="_blank"><img src="images/link1.jpg" alt="bhg-guide-to-australian-flowers" width="100%"></a>
+                    <p class="tablet-desktop">"Looking to add a touch of Australiana when building a bouquet or growing your garden? There are so many stunning Australian native flowers to choose from."</p>
+                    <p class="mobile">Native guide to australia flowers</p>
+                    </div>
+                </div>
+                <div class="column-links">
+                    <div class="links-content">
+                    <a href="https://www.almanac.com/flower-meanings-language-flowers" target="_blank"><img src="images/link2.jpg" alt="almanac-flower-language" width="100%"></a>
+                    <p class="tablet-desktop">"Discover the language of flowers with the Almanac's complete chart of Flower Meanings. Which flowers represent love, strength, innocence, and family? 
+                        What does a rose symbolize? When picking flowers for a bouquet, garden, or even a tattoo, know what they represent."</p>
+                    <p class="mobile">Language of flowers with the Almanac</p>
+                    </div>
+                </div>
+                <div class="column-links">
+                    <div class="links-content">
+                    <a href="https://indianapublicmedia.org/focusonflowers/rankings.php" target="_blank"><img src="images/link3.jpg" alt="indianapublic-flowers-ranking" width="100%"></a>
+                    <p class="tablet-desktop">"I was surprised to read recently that flowers are ranked each year for popularity in the trade. This is probably not surprising, 
+                        as everything seems to be ranked in one way or another, and florists probably need to know specifics instead of just hunches so that they can order more precisely. 
+                        The cut flower rankings are as follows:"</p>
+                    <p class="mobile">Flower ranking by Indianapublicmedia</p>
+                    </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer>
+            <img src="images/logo2.jpg" alt="alternative logo">
+            <p>&copy; Copyright 2021 
+                <br>All Rights Reserved
+                <br><a href="index.html">Busy Bee Florist</a>
+            </p><br>
+        </footer>
+    </div>
+
+</body>
+</html>
